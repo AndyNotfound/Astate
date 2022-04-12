@@ -1,12 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :root{
     --dark-jungle-green: #00100B;
     --ghost-white: #F7F7FF;
     --sunglow: #FFD23F;
     --blue-green: #07A0C3;
-    --paradise-pink: #EE4266;
+    --paradise-pink: #EB3349;
+    --mobile-s: 320px;
+    --mobile-m: 375px; 
+    --mobile-l: 425px;
+    --tablet: 768px;
+    --laptop: 1024px;
+    --laptop-l: 1440px;
+    --4k: 2560px;
+    --mobile-container: 90%;
+    --tablet-container: 75%;
+    --laptop-container: 70%;
+    --poppins: 'Poppins', sans-serif;;
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 body{
-    background: var(--dark-jungle-green);
+    background-color: var(--dark-jungle-green);
     color: var(--ghost-white);
 }
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%)
+}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: var(--ghost-white);            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center;
+   color: var(--ghost-white);
+   text-decoration: none;
+ }

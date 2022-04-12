@@ -1,0 +1,9 @@
+header{
+    height: 100vh;
+    border: 1px white solid;
+    background: linear-gradient(to right, #44a08d, #093637);
+}
+
+img{
+    width: 32%;
+}

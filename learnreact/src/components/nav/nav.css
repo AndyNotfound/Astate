@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 2em;
+    border: 1px solid white;
+    font-family: var(--poppins);
+}
+nav.navbar > .logo{
+    width: 4%;
+}
+.nav-link{
+    display: flex;
+    gap: 5em;
+    align-items: center;
+}
+.nav-link > a{
+    cursor: pointer;
+}
+.btn{
+    background-color: var(--sunglow);
+    padding: 0.8em 2.3em;
+}
