@@ -8,16 +8,16 @@ import logo from '../../assets/logo.png'
 
 export const Nav = () => {
   return (
-    // <nav className='navbar'>
-    //   <img src={logo} className='logo'/>
-    //   <div className='nav-link'>
-    //     <a href={Hero}>Home</a>
-    //     <a href={About}>About</a>
-    //     <a href={Service}>Service</a>
-    //     <a href={Contact} className='btn'>Contact</a>
-    //   </div>
-    // </nav>
-    <div>Nav</div>
+    <nav className='navbar'>
+      <img src={logo} className='logo'/>
+      <div className='nav-link'>
+        <a href={Hero}>Home</a>
+        <a href={About}>About</a>
+        <a href={Service}>Service</a>
+        <a href={Contact} className='btn'>Contact</a>
+      </div>
+    </nav>
+    /* <div>Nav</div> */
   )
 }
 

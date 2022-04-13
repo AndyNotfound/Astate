@@ -2,8 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    top: 0.5em;
+    width: 100%;
     padding: 0.5em 2em;
-    border: 1px solid white;
+    background-color: transparent;
     font-family: var(--poppins);
 }
 nav.navbar > .logo{

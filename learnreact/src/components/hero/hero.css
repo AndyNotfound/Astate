@@ -1,9 +1,45 @@
 header{
     height: 100vh;
-    border: 1px white solid;
-    background: linear-gradient(to right, #44a08d, #093637);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
 }
 
-img{
-    width: 32%;
+.main{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    font-family: var(--poppins);
+}
+
+h5, span.warn{
+    text-transform: uppercase;
+}
+
+span.warn{
+    color: var(--paradise-pink);
+}
+
+span.focus{
+    color: var(--sunglow);
+}
+
+.main > p{
+    width: 70ch;
+    margin-top: 1.5em;
+    text-transform: initial;
+}
+
+.image{
+    width: 30%;
+    align-self: flex-end;
+}
+
+.image > img{
+    width: 100%;
 }
