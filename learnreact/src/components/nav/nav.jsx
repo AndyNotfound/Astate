@@ -1,10 +1,10 @@
 import React from 'react'
+import logo from '../../assets/logo.png'
 import Hero from '../hero/hero'
 import About from '../about/about'
 import Service from '../service/service'
 import Contact from '../contact/contact'
 import './nav.css'
-import logo from '../../assets/logo.png'
 
 export const Nav = () => {
   return (
@@ -17,7 +17,6 @@ export const Nav = () => {
         <a href={Contact} className='btn'>Contact</a>
       </div>
     </nav>
-    /* <div>Nav</div> */
   )
 }
 

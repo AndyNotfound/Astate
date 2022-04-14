@@ -6,6 +6,9 @@
     --sunglow: #FFD23F;
     --blue-green: #07A0C3;
     --paradise-pink: #EB3349;
+    --darklategray: #363636;
+    --main-gradien: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    --sketch-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     --mobile-s: 320px;
     --mobile-m: 375px; 
     --mobile-l: 425px;
@@ -30,6 +33,7 @@
     word-spacing: normal;
     letter-spacing: 0.03em;
     text-transform: capitalize;
+    font-family: var(--poppins);
 }
 
 h1{
