@@ -1,20 +1,17 @@
 header#hero{
     height: 100vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background: var(--main-gradien);
     background-blend-mode: multiply;
 }
 
-.main{
-    width: 45%;
+.container__header{
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    padding: 1em;
-    font-family: var(--poppins);
+    align-items: flex-start;
 }
 
 h5, span.warn{
@@ -29,17 +26,63 @@ span.focus{
     color: var(--sunglow);
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    font-family: var(--poppins);
+}
+
 .main > p{
-    width: 70ch;
+    width: fit-content;
     margin-top: 1.5em;
     text-transform: initial;
 }
 
-.image{
-    width: 30%;
-    align-self: flex-end;
-}
-
 .image > img{
     width: 100%;
+    height: auto;
+}  
+
+@media (min-width:320px) and (max-width: 425px){ /*Mobile*/
+    .container__header{
+        gap: 1em;
+    }
+    .image > img{
+        display: none;
+    }
+    .main, .image{
+        width: fit-content;
+    }
+}
+@media screen and (min-width: 425px){ /*Tablet*/
+    .container__header{
+        gap: 2em;
+        padding: 1em 0em;
+    }
+    .main{
+        width: 100%;
+    }
+    .image{
+        align-self: flex-end;
+        margin: auto;
+        width: 60%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 768px) { /*Laptop*/
+    .container__header{
+        flex-direction: row;
+        gap: 5em;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main{
+        width: 60%;
+    }
+    .image{
+        width: 35%;
+        align-self: flex-end;
+    }
 }

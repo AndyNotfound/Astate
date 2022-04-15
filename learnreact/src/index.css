@@ -7,18 +7,12 @@
     --blue-green: #07A0C3;
     --paradise-pink: #EB3349;
     --darklategray: #363636;
-    --main-gradien: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    --main-gradien: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), 
+                    linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
     --sketch-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    --mobile-s: 320px;
-    --mobile-m: 375px; 
-    --mobile-l: 425px;
-    --tablet: 768px;
-    --laptop: 1024px;
-    --laptop-l: 1440px;
-    --4k: 2560px;
-    --mobile-container: 90%;
-    --tablet-container: 75%;
-    --laptop-container: 70%;
+    --mobile-container: 95%;
+    --tablet-container: 90%;
+    --laptop-container: 80%;
     --poppins: 'Poppins', sans-serif;;
 }
 
@@ -34,39 +28,69 @@
     letter-spacing: 0.03em;
     text-transform: capitalize;
     font-family: var(--poppins);
-}
-
-h1{
-    font-size: 4rem;
-    line-height: 1.35;
-}
-
-h2{
-    font-size: 3.5rem;
-    line-height: 1.35;
-}
-
-h3{
-    font-size: 3rem;
-    line-height: 1.25;
-}
-
-h4{
-    font-size: 2.5rem;
-    line-height: 1.15;
-}
-
-h5{
-    font-size: 1.3rem;
-    line-height: 1.05;
-}
-
-p{
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-body{
-    background-color: var(--dark-jungle-green);
     color: var(--ghost-white);
+}
+
+/*Media Queries*/
+@media (min-width:320px) and (max-width: 425px){ /*Mobile*/
+    h1{
+        font-size: 2.2rem;
+    }
+    h5{
+        font-size: 1rem;
+    }
+    p, a{
+        font-size: 0.9rem;
+    }
+    .container{
+        width: var(--mobile-container);
+        margin: auto;
+    }
+}
+@media screen and (min-width: 425px){ /*Tablet*/
+    h1{
+        font-size: 2.7rem;
+    }
+    h5{
+        font-size: 1.3rem;
+    }
+    .container{
+        width: var(--tablet-container);
+        margin: auto;
+    }
+}
+@media screen and (min-width: 768px) { /*Laptop*/
+    h1{
+        font-size: 4rem;
+        line-height: 1.35;
+    }
+    
+    h5{
+        font-size: 1.3rem;
+        line-height: 1.05;
+    }
+    
+    p, a{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .container{
+        width: var(--laptop-container);
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1600px) { /*4K*/
+    h1{
+        font-size: 5rem;
+    }
+    h5{
+        font-size: 3rem;
+    }
+    p, a{
+        font-size: 1.7rem;
+    }
+    .container{
+        width: var(--laptop-container);
+        margin: auto;
+    }
 }
