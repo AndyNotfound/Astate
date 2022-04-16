@@ -9,7 +9,7 @@ section#search{
     border-radius: 0.2em;
 }
 
-.container{
+/* .container{
     background-color: var(--dark-jungle-green);
     display: flex;
     gap: 1em;
@@ -17,7 +17,7 @@ section#search{
     justify-content: space-evenly;
     align-items: inherit;
     border-radius: 0.2em;
-}
+} */
 
 .box{
     display: flex;

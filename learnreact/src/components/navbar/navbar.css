@@ -1,0 +1,104 @@
+nav#navbar{
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--darklategray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 1em 2em;
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.nav-links:hover{
+    border-bottom: 2px solid var(--sunglow);
+    transition: all 0.1s ease-out;
+}
+
+.button{
+    background-image: var(--button-gradien);
+    background-size: 200% auto;
+    padding: 0.8em 1.8em;
+    margin-left: 1em;
+    border-radius: 0.2em;
+    transition: all ease-out 0.2s;
+}
+
+.button:hover {
+    background-position: right center;
+}
+
+@media (min-width:320px) and (max-width: 425px){ /*Mobile*/
+    nav#navbar{
+        padding: 0.8em 1.8em;
+        height: fit-content;
+    }
+    .navbar-logo{
+        width: 40px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .nav-menu{
+        width: 100%;
+        padding: 2em;
+        background-color: var(--darklategray);
+        display: flex;
+        flex-direction: column;
+        top: 3.5em;
+        right: -100%;
+        position: fixed;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav-menu.active{
+        right: 0%;
+    }
+    .nav-links:hover{
+        border-bottom: none;
+    }
+    .button{
+        width: fit-content;
+        margin: 0;
+        background-image: none;
+        background-size: initial;
+    }
+    .button:hover {
+        background-position: initial;
+    }
+}
+@media screen and (min-width: 425px){ /*Tablet*/
+    nav#navbar{
+        height: 4em;
+        z-index: 3;
+    }
+    .button{
+        padding: 0.7em 1.8em;
+    }
+    .navbar-logo{
+        width: 45px;
+    }
+}
+@media screen and (min-width: 768px) { /*Laptop*/
+    .navbar-logo{
+        width: 4%;
+    }
+}
+@media screen and (min-width: 1600px) { /*4K*/
+    nav#navbar{
+        padding: 3.5em 4em;
+    }
+    .navbar-logo{
+        width: 3.2%;
+    }
+}
