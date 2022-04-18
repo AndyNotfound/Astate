@@ -16,8 +16,8 @@ export const Hero = () => {
             <div className='image'>
               <img src={agent} />
             </div>
+            < Search />
         </div>
-        {/* < Search /> */}
       </header>
   </>
   )

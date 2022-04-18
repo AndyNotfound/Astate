@@ -29,66 +29,79 @@
     letter-spacing: 0.03em;
     text-transform: capitalize;
     font-family: var(--poppins);
-    color: var(--ghost-white);
+    color: unset;
 }
 
 /*Media Queries*/
 @media (min-width:320px) and (max-width: 425px){ /*Mobile*/
     h1{
         font-size: 2.2rem;
+        color: var(--ghost-white);
     }
     h5{
         font-size: 1rem;
+        color: var(--ghost-white);
     }
-    p, a{
+    p, a, *::placeholder{
         font-size: 0.9rem;
     }
     .container{
         width: var(--mobile-container);
         margin: auto;
+        color: var(--ghost-white);
     }
 }
 @media screen and (min-width: 425px){ /*Tablet*/
     h1{
         font-size: 2.7rem;
+        color: var(--ghost-white);
     }
     h5{
         font-size: 1.3rem;
+        color: var(--ghost-white);
     }
     .container{
         width: var(--tablet-container);
         margin: auto;
+        color: var(--ghost-white);
     }
 }
 @media screen and (min-width: 768px) { /*Laptop*/
     h1{
         font-size: 4rem;
         line-height: 1.35;
+        color: var(--ghost-white);
     }
     
     h5{
         font-size: 1.3rem;
         line-height: 1.05;
+        color: var(--ghost-white);
     }
     
-    p, a{
+    p, a, *::placeholder{
         font-size: 1rem;
         line-height: 1.5;
+        color: var(--ghost-white);
     }
     .container{
         width: var(--laptop-container);
         margin: auto;
+        color: var(--ghost-white);
     }
 }
 @media screen and (min-width: 1600px) { /*4K*/
     h1{
         font-size: 5rem;
+        color: var(--ghost-white);
     }
     h5{
         font-size: 3rem;
+        color: var(--ghost-white);
     }
-    p, a{
+    p, a, *::placeholder{
         font-size: 1.7rem;
+        color: var(--ghost-white);
     }
     .container{
         width: var(--laptop-container);
