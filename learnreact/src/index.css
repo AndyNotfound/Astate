@@ -60,6 +60,9 @@
         font-size: 1.3rem;
         color: var(--ghost-white);
     }
+    p, a, *::placeholder{
+        color: var(--ghost-white);
+    }
     .container{
         width: var(--tablet-container);
         margin: auto;

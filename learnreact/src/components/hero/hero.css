@@ -54,33 +54,24 @@ span.focus{
         display: none;
     }
 }
-@media screen and (min-width: 425px){ /*Tablet*/
-    header#hero{ 
-        /*Damn we had to use positioning here huh*/
-        position: relative;
-        top: 4em;
-        z-index: 1;
-    }
+@media screen and (min-width: 425px) and (max-width:768px){ /*Tablet*/
     .container__header{
-        gap: 2em;
+        gap: 1em;
         padding: 1em 0em;
     }
     .main{
         width: 100%;
     }
-    .image{
-        align-self: flex-end;
-        margin: auto;
-        width: 60%;
-        height: auto;
+    .image > img{
+        display: none;
     }
 }
 @media screen and (min-width: 768px) { /*Laptop*/
     .container__header{
         flex-direction: row;
-        gap: 5em;
         justify-content: space-between;
         align-items: center;
+        gap: 5em;
     }
     .main{
         width: 60%;

@@ -85,7 +85,6 @@ nav#navbar{
 }
 @media (min-width: 425px) and (max-width: 550px){ /*Some Mobile/Tablet*/
     nav#navbar{
-        height: 4em;
         padding: 0.8em 1.8em;
     }
     .navbar-logo{
@@ -123,20 +122,16 @@ nav#navbar{
     }
 }
 @media screen and (min-width: 550px){ /*Tablet*/
-    nav#navbar{
-        height: 4em;
-        z-index: 3;
-    }
     .button{
         padding: 0.7em 1.8em;
     }
     .navbar-logo{
-        width: 45px;
+        width: 30px;
     }
 }
 @media screen and (min-width: 768px) { /*Laptop*/
     .navbar-logo{
-        width: 4%;
+        width: 40px;
     }
 }
 @media screen and (min-width: 1600px) { /*4K*/
