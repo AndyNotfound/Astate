@@ -8,7 +8,7 @@ import './search.css'
 
 export const Search = () => {
   return (
-    <IconContext.Provider value={{size: '1.5em'}}>
+    <IconContext.Provider value={{className:'icon'}}>
         <section id='search' className='container'>
             <div className='search__container'>
                 <div className='box'>

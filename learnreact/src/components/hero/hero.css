@@ -1,4 +1,6 @@
 header#hero{
+    position: relative;
+    top: 70px;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -9,17 +11,32 @@ header#hero{
 }
 
 .container__header{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 30% 30% 30%;
 }
 
 .main{
+    grid-column-start:span 2;
     display: flex;
     flex-direction: column;
     gap: 1em;
     padding: 1em;
     font-family: var(--poppins);
 }
+
+.image{
+    align-self: end;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.image > img{
+    width: 100%;
+    height: auto;
+}
+
 h5, span.warn{
     text-transform: uppercase;
 }
@@ -34,50 +51,47 @@ span.focus{
 
 .main > p{
     width: fit-content;
-    margin-top: 1.5em;
+    margin-top: 1em;
     text-transform: initial;
 }
 
-.image > img{
-    width: 100%;
-    height: auto;
-}  
-
 @media (min-width:320px) and (max-width: 425px){ /*Mobile*/
+    header#hero{
+        top: 60px;
+    }
     .container__header{
         gap: 1em;
     }
-    .main, .image{
-        width: fit-content;
+    .main{
+        grid-column-start: span 3;
     }
-    .image > img{
+    .image{
         display: none;
     }
 }
 @media screen and (min-width: 425px) and (max-width:768px){ /*Tablet*/
+    header#hero{
+        top: 70px;
+    }
     .container__header{
         gap: 1em;
         padding: 1em 0em;
     }
     .main{
-        width: 100%;
+        grid-column-start: span 3;
     }
-    .image > img{
+    .image{
         display: none;
     }
 }
-@media screen and (min-width: 768px) { /*Laptop*/
+@media screen and (min-width: 768px) and (max-width:1150px) { /*Some Tablet or Laptop*/
     .container__header{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 5em;
+        gap: 2em;
     }
     .main{
-        width: 60%;
+        grid-column-start: span 3;
     }
     .image{
-        width: 35%;
-        align-self: flex-end;
+        display: none;
     }
 }

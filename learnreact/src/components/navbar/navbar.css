@@ -1,17 +1,18 @@
 nav#navbar{
     width: 100%;
-    height: fit-content;
+    height: 70px;
+    background-color: var(--darklategray);
     position: fixed;
     z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    padding: 1em 2em;
-    background-color: var(--darklategray);
+    padding: 0em 2em;
 }
 
 .navbar-logo{
+    width: 40px;
     cursor: pointer;
 }
 
@@ -27,12 +28,12 @@ nav#navbar{
 }
 
 .nav-links:hover{
-    border-bottom: 2px solid var(--sunglow);
+    border-bottom: 1.5px solid var(--sunglow);
     transition: all 0.1s ease-out;
 }
 
 .button{
-    padding: 0.8em 1.8em;
+    padding: 0.6em 1.7em;
     margin-left: 1em;
     border-radius: 0.2em;
     transition: all ease-out 0.2s;
@@ -46,63 +47,20 @@ nav#navbar{
 
 @media (min-width:320px) and (max-width: 425px){ /*Mobile*/
     nav#navbar{
-        height: fit-content;
-        padding: 0.8em 1.8em;
-    }
-    .navbar-logo{
-        width: 40px;
+        height: 60px;
     }
     .menu-icon{
         display: block;
     }
     .nav-menu{
+        background-color: var(--darklategray);
         width: 100%;
-        padding: 2em;
-        display: flex;
         flex-direction: column;
         position: fixed;
         z-index: 2;
-        top: 3.5em;
+        top: 60px;
         right: -100%;
-        transition: all 0.5s ease-in-out;
-        background-color: var(--darklategray);
-    }
-    .nav-menu.active{
-        right: 0%;
-    }
-    .nav-links:hover{
-        border-bottom: none;
-    }
-    .button{
-        width: fit-content;
-        margin: 0;
-        background-image: none;
-        background-size: initial;
-    }
-    .button:hover {
-        background-position: initial;
-    }
-}
-@media (min-width: 425px) and (max-width: 550px){ /*Some Mobile/Tablet*/
-    nav#navbar{
-        padding: 0.8em 1.8em;
-    }
-    .navbar-logo{
-        width: 40px;
-    }
-    .menu-icon{
-        display: block;
-    }
-    .nav-menu{
-        width: 100%;
-        padding: 2em;
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        z-index: 2;
-        top: 4em;
-        right: -100%;
-        background-color: var(--darklategray);
+        padding: 1em;
         transition: all 0.5s ease-in-out;
     }
     .nav-menu.active{
@@ -121,17 +79,35 @@ nav#navbar{
         background-position: initial;
     }
 }
-@media screen and (min-width: 550px){ /*Tablet*/
+@media (min-width: 425px) and (max-width: 550px){ /*Some Mobile or Tablet*/
+    .menu-icon{
+        display: block;
+    }
+    .nav-menu{
+        background-color: var(--darklategray);
+        width: 100%;
+        flex-direction: column;
+        position: fixed;
+        z-index: 2;
+        top: 70px;
+        right: -100%;
+        padding: 1em;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav-menu.active{
+        right: 0%;
+    }
+    .nav-links:hover{
+        border-bottom: none;
+    }
     .button{
-        padding: 0.7em 1.8em;
+        width: fit-content;
+        margin: 0;
+        background-image: none;
+        background-size: initial;
     }
-    .navbar-logo{
-        width: 30px;
-    }
-}
-@media screen and (min-width: 768px) { /*Laptop*/
-    .navbar-logo{
-        width: 40px;
+    .button:hover {
+        background-position: initial;
     }
 }
 @media screen and (min-width: 1600px) { /*4K*/

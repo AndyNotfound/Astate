@@ -1,10 +1,11 @@
 section#search{
-    position: absolute;
-    bottom: 2%;
-    padding: 1em;
+    width: 100%;
     background-color: var(--darklategray);
-    box-shadow: var(--sketch-box-shadow);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 1em;
     border-radius: 0.2em;
+    box-shadow: var(--sketch-box-shadow);
 }
 
 .search__container{
@@ -13,25 +14,28 @@ section#search{
     gap: 1em;
     padding: 1em;
     justify-content: space-evenly;
-    align-items: inherit;
     border-radius: 0.2em;
 }
 
 .box{
     display: flex;
-    gap: 1em;
-    padding: 0.5em 0em 0em 1em;
+    gap: 0.5em;
+    padding: 0em 0em 0em 1em;
     width: 25%;
 }
 
-.box:not(:nth-child(3)){
-    border-right: 1px solid var(--ghost-white);
+.box:not(:nth-child(1)){
+    border-left: 1px solid var(--ghost-white);
+}
+
+svg.icon:not(.search-icon){
+    font-size: 1.5em;
 }
 
 .label {
     display: flex;
     flex-direction: column;
-    gap: 0.2em;
+    gap: 0.3em;
 }
 
 .label > h5{
@@ -80,35 +84,21 @@ section#search{
 
 }
 
-@media (min-width:320px) and (max-width: 425px){ /*Mobile*/
+@media (min-width:320px) and (max-width: 550px){ /* Some Mobile or Tablet*/
     section#search{
         padding: 0.5em;
     }
     .search__container{
         bottom: 15em;
     }
-    .search{
-        width: 100%;
-    }
     .box:not(:last-of-type){
         display: none;
-    }
-}
-@media (min-width: 425px) and (max-width: 550px){ /*Some Mobile/Tablet*/
-    section#search{
-        padding: 0.5em;
-    }
-    .search__container{
-        bottom: 15em;
     }
     .search{
         width: 100%;
     }
-    .box:not(:last-of-type){
-        display: none;
-    }
 }
-@media screen and (min-width: 550px) and (max-width:768px){ /*Tablet*/
+@media screen and (min-width: 550px) and (max-width:1150px){ /*Some Tablet or Laptop*/
     section#search{
         padding: 0.5em;
         position: relative;
@@ -127,16 +117,33 @@ section#search{
         width: 100%;
         justify-content: center;
         gap: 1em;
-        grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-start: span 3;
     }
     .search-icon{
-        margin: 0;
+        margin: unset;
     }
-    .box:not(:nth-child(3)){
-        border-right: unset;
+    .box:not(:nth-child(1)){
+        border-left: unset;
     }
     .label{
         gap: 0.5em;
+    }
+}
+@media screen and (min-width: 1600px) { /*4K*/
+    .search__container{
+        gap: 2em;
+        padding: 2em;
+    }
+    .box{
+        gap: 1em;
+    }
+    .search-bar{
+        padding: 2em;
+    }
+    svg.icon:not(.search-icon){
+        font-size: 2.2em;
+    }
+    svg.icon.search-icon{
+        font-size: 1.55em;
     }
 }

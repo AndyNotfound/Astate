@@ -44,11 +44,11 @@
     }
     p, a, *::placeholder{
         font-size: 0.9rem;
+        color: var(--ghost-white);
     }
     .container{
         width: var(--mobile-container);
         margin: auto;
-        color: var(--ghost-white);
     }
 }
 @media screen and (min-width: 425px){ /*Tablet*/
