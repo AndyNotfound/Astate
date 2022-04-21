@@ -9,7 +9,7 @@ section#search{
 }
 
 .search__container{
-    background-color: var(--dark-jungle-green);
+    background-color: var(--darklatesgray);
     display: flex;
     gap: 1em;
     padding: 1em;

@@ -7,6 +7,8 @@
     --blue-green: #07A0C3;
     --paradise-pink: #EB3349;
     --darklategray: #363636;
+    --darklatesgray: #2c2c2c;
+    --prussian-blue: #1C3144;
     --main-gradien: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), 
                     linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
     --button-gradien: linear-gradient(to right, #ffd23f 0%, #ffcc33  51%, #ffb347  100%);

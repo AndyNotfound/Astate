@@ -37,7 +37,7 @@ header#hero{
     height: auto;
 }
 
-h5, span.warn{
+.main > h5, span.warn{
     text-transform: uppercase;
 }
 
