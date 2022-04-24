@@ -1,6 +1,6 @@
 section#search{
     width: 100%;
-    background-color: var(--darklategray);
+    background-color: var(--light-main-color);
     grid-column-start: 1;
     grid-column-end: 4;
     padding: 1em;
@@ -9,7 +9,7 @@ section#search{
 }
 
 .search__container{
-    background-color: var(--darklatesgray);
+    background-color: var(--super-dark-main-color);
     display: flex;
     gap: 1em;
     padding: 1em;
@@ -58,14 +58,14 @@ svg.icon:not(.search-icon){
     width: 80%;
     border: none;
     outline: none;
-    color: var(--darklategray);
+    color: var(--super-dark-main-color);
     padding: 1em;
     text-indent: 1em;
     border-radius: 0.2em;
 }
 
 .search-bar::placeholder{
-    color: var(--darklategray);
+    color: var(--super-dark-main-color);
 }
 
 .search-icon{
