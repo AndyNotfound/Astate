@@ -34,7 +34,7 @@ section#howItWorks{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 1em;
-    gap: 1em;
+    gap: 2em;
 }
 
 .how-it-works-box{
@@ -42,8 +42,7 @@ section#howItWorks{
     flex-direction: column;
     gap: 0.5em;
     padding: 2em;
-    border: 2px solid rgb(47, 51, 58);
-    border-radius: 0.2em;
+    border: 2px solid;
     background-image: var(--gradien-two);
     border-image: var(--border-gradien);
 }
@@ -55,4 +54,28 @@ section#howItWorks{
 
 .how-it-works-icon{
     width: 70px;
+}
+
+@media (min-width:320px) and (max-width: 425px){ /*Mobile*/
+    section#howItWorks{
+        width: auto;
+        position: initial;
+        padding: 1em 0em;
+        grid-column-end: unset;
+        gap: 1em;
+    }
+    .how-it-works{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .how-it-works > h2, .how-it-works > p{
+        width: 100%;
+    }
+    .how-it-works-grid{
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+    .how-it-works-box{
+        padding: 1em 1.3em;
+    }
 }

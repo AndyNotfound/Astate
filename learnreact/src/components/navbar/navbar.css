@@ -28,8 +28,8 @@ nav#navbar{
     gap: 2em;
 }
 
-.nav-links:hover{
-    border-bottom: 1.5px solid var(--sunglow);
+a.nav-links:hover{
+    border-bottom: 1.5px solid var(--button-primary-color);
     transition: all 0.1s ease-out;
 }
 
@@ -67,7 +67,7 @@ nav#navbar{
     .nav-menu.active{
         right: 0%;
     }
-    .nav-links:hover{
+    a.nav-links:hover{
         border-bottom: none;
     }
     .button{
@@ -95,7 +95,7 @@ nav#navbar{
         padding: 1em;
         transition: all 0.5s ease-in-out;
     }
-    .nav-menu.active{
+    a.nav-menu.active{
         right: 0%;
     }
     .nav-links:hover{

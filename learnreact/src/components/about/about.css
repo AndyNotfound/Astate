@@ -36,3 +36,27 @@ section#about{
     width: 90px;
     padding: 0.5em;
 }
+
+@media (min-width:320px) and (max-width: 425px){ /*Mobile*/
+    section#about{
+        align-items: center;
+        padding: 2em 0em;
+        height: fit-content;
+    }
+    .advantage-grid{
+        height: fit-content;
+        grid-template-columns: 1fr;
+        grid-template-rows: unset;
+        position: static;
+        padding: 0em 0.5em 2em 0.5em;
+        gap: 1em;
+    }
+    .advantage-box{
+        padding: 0.7em 0em;
+        justify-content: center;
+        border-bottom: unset;
+    }
+    .advantage-box:not(:last-of-type){
+        border-right: unset;
+    }
+}
