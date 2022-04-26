@@ -79,3 +79,28 @@ section#howItWorks{
         padding: 1em 1.3em;
     }
 }
+@media (min-width:425px) and (max-width:1030px) { /*Tablet*/
+    section#howItWorks{
+        width: 90%;
+        position: initial;
+        padding: 1em 0em;
+        grid-column-end: 4;
+        gap: 1em;
+    }
+    .how-it-works > h2{
+        width: 40%;
+    }
+    .how-it-works > p{
+        width: 60%;
+    }
+    .how-it-works-box{
+        padding: 0em;
+    }
+    .how-it-works-grid{
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+    .how-it-works-box{
+        padding: 1em 1.3em;
+    }
+}

@@ -60,3 +60,21 @@ section#about{
         border-right: unset;
     }
 }
+
+@media (min-width:425px) and (max-width:768px){
+    section#about{
+        align-items: center;
+        padding: 2em 0em;
+        height: fit-content;
+        gap: 1em;
+    }
+    .advantage-box{
+        height: fit-content;
+        flex-direction: column;
+        padding: 1em;
+        border: unset;
+    }
+    .advantage-box:not(:last-of-type){
+        border-right: unset;
+    }
+}
