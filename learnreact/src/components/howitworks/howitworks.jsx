@@ -8,7 +8,7 @@ export const Howitworks = () => {
   return (
     <section id='howItWorks' className='howItWorks__container'>
         <div className='how-it-works'>
-            <h2>How It Works</h2>
+            <h2>How It Works.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div className='how-it-works-grid'>
