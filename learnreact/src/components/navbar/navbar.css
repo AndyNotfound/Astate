@@ -4,6 +4,7 @@ nav#navbar{
     /* position: fixed; */
     position: absolute;
     background-color: transparent;
+    /* background: var(--gradien-one); */
     z-index: 3;
     display: flex;
     justify-content: space-between;

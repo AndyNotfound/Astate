@@ -9,7 +9,7 @@ section#about{
 }
 
 .advantage-grid{
-    width: 92%;
+    width: 90%;
     height: 70%;
     background-color: var(--secondary-color);
     display: grid;

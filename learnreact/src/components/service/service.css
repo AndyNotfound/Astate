@@ -1,7 +1,7 @@
 section#service{
     width: 100%;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
     background-color: var(--super-dark-main-color);
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@ section#service{
 }
 
 .container__service{
-    width: 92%;
+    width: 90%;
     height: fit-content;
     background-color: var(--secondary-color);
     padding: 2em;
@@ -20,11 +20,11 @@ section#service{
 }
 
 .service-header{
-    margin-left: 2em;
-}
-
-.service-header > p{
-    width: 70ch;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: auto;
 }
 
 .post-card{
@@ -51,7 +51,7 @@ figure{
 
 .post-image figure img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     border-top-left-radius: 0.2em;
     border-top-right-radius: 0.2em;
 	-webkit-transform: scale(1);
@@ -101,4 +101,63 @@ figure{
 .arrow{
     font-size: 3rem;
     color: var(--ghost-white);
+}
+
+@media (min-width:320px) and (max-width: 425px){ /*Mobile*/
+    .container__service{
+        gap: 1em;
+    }
+    .post{
+        padding-right: 0;
+    }
+    .post-image figure img {
+        height: 150px;
+    }
+    .post-detail{
+        margin: 1em;
+    }
+    .post-price{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2em;
+    }
+    .post-price > .button{
+        align-self: flex-end;
+        margin-left: 0em;
+        width: fit-content;
+        padding: 0.6em 0.9em;
+        transition: all ease-out 0.2s;
+        background-image: var(--button-gradien);
+        background-size: 200% auto;
+    }
+    .arrow{
+        font-size: 6rem;
+    }
+}
+@media screen and (min-width: 425px) and (max-width: 700px){ /*Some Tablet*/
+    .post-price > .button{
+        align-self: flex-end;
+        margin-left: 0em;
+        width: fit-content;
+        padding: 0.6em 0.9em;
+        transition: all ease-out 0.2s;
+        background-image: var(--button-gradien);
+        background-size: 200% auto;
+    }
+    .arrow{
+        font-size: 6rem;
+    }
+}
+@media screen and (min-width: 768px) { /*Laptop*/
+    .service-header > p{
+        width: 70ch;
+    }
+}
+@media screen and (min-width: 1600px) { /*4K*/
+    .post-image figure img {
+        height: 450px;
+    }
+    .arrow{
+        font-size: 4rem;
+    }
 }
