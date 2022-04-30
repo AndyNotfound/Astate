@@ -35,6 +35,13 @@
     color: unset;
 }
 
+.focus{
+    color: var(--button-primary-color);
+}
+.warn{
+    color: var(--warning-color);
+}
+
 /*Media Queries*/
 @media (min-width:320px) and (max-width: 425px){ /*Mobile*/
     h1{

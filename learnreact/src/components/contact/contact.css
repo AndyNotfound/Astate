@@ -1,0 +1,82 @@
+section#contact{
+    background-color: var(--secondary-color);
+    padding: 2em 0 0 0;
+}
+.gray-scale{
+    cursor: pointer;
+    width: fit-content;
+    height: 70px;
+    filter: grayscale(80%);
+}
+
+.footer-logo{
+    width: 60px;
+    cursor: pointer;
+}
+
+.contact-grid{
+    display: grid;
+    padding: 1em;
+    gap: 3em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 300px;
+    grid-template-areas: "company company company company company company company"
+                         "workwith workwith workwith link form form form";
+}
+
+.company-grid{
+    grid-area: company;
+    display: flex;
+    padding: 0em 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.workwith{
+    grid-area: workwith;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    position: relative;
+}
+
+.link{
+    grid-area: link;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.link a:hover{
+    color: var(--button-primary-color);
+}
+
+.contact-form{
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1em;
+    padding: 1em;
+}
+
+.contact-form > h5{
+    width: 80%;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 80%;
+    padding: 1em;
+    color: var(--super-dark-main-color);
+    outline: unset;
+    border: unset;
+    border-radius: 0.2em;
+    background-color: #a57d4e;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+    color: var(--super-dark-main-color);
+}

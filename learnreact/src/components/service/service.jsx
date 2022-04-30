@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import Stats from '../stats/stats'
 import Post from "./Post";
 import breakpoint from "./cardbreakpoint";
 import './service.css'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { GoLocation } from 'react-icons/go'
+import Evaluation from "../evaluation/evaluation";
 
 function SampleNextArrow(props) {
   const { style, onClick } = props;
@@ -43,6 +45,7 @@ class Service extends Component {
 
     return (
       <section id='service'>
+        <Stats />
         <div className="container__service">
           <div className="service-header">
             <h2>Our <span className='focus'>Featured </span>Property.</h2>
@@ -73,6 +76,7 @@ class Service extends Component {
           })}
           </Slider>
         </div>
+        <Evaluation />
       </section>
     );
   }

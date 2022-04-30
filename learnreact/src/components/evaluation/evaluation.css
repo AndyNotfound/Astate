@@ -1,0 +1,31 @@
+.evaluation__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.evaluation-image{
+    width: 40%;
+}
+
+.evaluation-image img{
+    width: 100%;
+}
+
+.evaluation-check{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.checked{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.detail > .button{
+    margin: unset;
+    width: fit-content;
+    cursor: pointer;
+}

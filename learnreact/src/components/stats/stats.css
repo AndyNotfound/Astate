@@ -1,0 +1,25 @@
+.stats__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.stats-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--light-main-color);
+    padding: 1em;
+    gap: 1em;
+}
+.stats-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2em;
+    text-align: center;
+}

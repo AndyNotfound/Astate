@@ -25,11 +25,11 @@ section#about{
     align-items: center;
     gap: 1em;
     padding: 1em 2em;
-    border-bottom: 1px solid var(--ghost-white);
+    border-bottom: 1px solid #e7bb82;
 }
 
 .advantage-box:not(:last-of-type){
-    border-right: 1px solid var(--ghost-white);
+    border-right: 1px solid #e7bb82;
 }
 
 .advantage-icon{
