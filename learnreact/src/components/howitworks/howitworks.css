@@ -9,8 +9,6 @@ section#howItWorks{
     flex-direction: column;
     gap: 2em;
     padding: 1em 5em;
-    position: absolute;
-    top: 30%;
 }
 
 .how-it-works{

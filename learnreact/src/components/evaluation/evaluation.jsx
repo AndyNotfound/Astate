@@ -1,7 +1,7 @@
 import React from 'react'
 import './evaluation.css'
 import { IoMdCheckmark } from 'react-icons/io'
-import apartment from '../../assets/apt.png'
+import apartment from '../../assets/aptg.png'
 
 function Evaluation() {
   return (
