@@ -54,7 +54,7 @@ a.nav-links:hover{
         display: block;
     }
     .nav-menu{
-        background-color: var(--darklategray);
+        background-color: var(--dark-main-color);
         width: 100%;
         flex-direction: column;
         position: fixed;
