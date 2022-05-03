@@ -1,9 +1,9 @@
 section#contact{
     background-color: var(--secondary-color);
     height: fit-content;
-    overflow: hidden;
-    padding-top: 20px;
+    padding-top: 30px;
 }
+
 .gray-scale{
     cursor: pointer;
     width: fit-content;
@@ -20,7 +20,6 @@ section#contact{
 
 .contact-grid{
     display: grid;
-    /* padding: 1em; */
     gap: 3em;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr;
@@ -61,6 +60,7 @@ section#contact{
     align-items: flex-end;
     gap: 1em;
     padding: 1em 0em 1em 1em;
+
 }
 
 .contact-form > h5{
@@ -80,4 +80,68 @@ section#contact{
 .contact-form input::placeholder, .contact-form textarea::placeholder{
     color: var(--ghost-white);
 
+}
+
+@media (min-width:320px) and (max-width: 768px){ /*Mobile*/
+    .contact-grid{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: unset;
+        gap: unset;
+        grid-template-areas: "company"
+                             "workwith"
+                             "form";
+    }
+    .company-grid{
+        display: none;
+    }
+    .workwith{
+        position: unset;
+        align-items: flex-start;
+        padding: 1em;
+    }
+    .contact-form{
+        align-items: center;
+        padding: 1em;
+    }
+    .footer-logo{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){ /*Tablet*/
+    .contact-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: unset;
+        grid-template-areas: "workwith workwith workwith workwith"
+                             "form form form company";
+    }
+    .company-grid{
+        grid-template-columns: 1fr;
+    }
+    .contact-form{
+        align-items: flex-start;
+        padding: 1em;
+    }
+    .contact-form input, .contact-form textarea{
+        width: 100%;
+    }
+    .gray-scale{
+        height: 40px;
+    }
+    .footer-logo{
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px){ /*Laptop*/
+    .gray-scale{
+        height: 50px;
+    }
+}
+@media screen and (min-width: 1600px) { /*4K*/
+    .contact-form input, .contact-form textarea{
+        padding: 2.5em;
+    }
+    .footer-logo{
+        width: 80px;
+    }
 }
