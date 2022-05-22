@@ -1,5 +1,5 @@
 # Real estate company landing page
-This is my very first project using React and version control (Git). Please don't mind my stupidness in this project.
+This is my very first project using React and version control (Git). Please don't mind my stupidness in this project. I'm trying to deploy it to Vercel but I just can't seem to do it correctly. So yeah, no demo.
 <br>
 <br>
 ![screencapture-localhost-3001-react-2022-05-03-01_23_18](https://user-images.githubusercontent.com/40969170/166303981-f44ccc35-90b1-4c52-b6a1-e8b589e56e29.png)
