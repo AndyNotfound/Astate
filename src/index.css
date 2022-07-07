@@ -90,7 +90,7 @@ section{
         color: var(--ghost-white);
     }
 }
-@media screen and (min-width: 768px) { /*Laptop*/
+@media screen and (min-width: 768px) and (max-width: 1900px) { /*Laptop*/
     h1{
         font-size: 4rem;
         line-height: 1.35;
@@ -117,21 +117,21 @@ section{
         color: var(--ghost-white);
     }
 }
-@media screen and (min-width: 1600px) { /*4K*/
+@media screen and (min-width: 1900px) { /*4K*/
     h1{
-        font-size: 5rem;
+        font-size: 4.3rem;
         color: var(--ghost-white);
     }
     h2{
-        font-size: 3.5rem;
+        font-size: 3.1rem;
         color: var(--ghost-white);
     }
     h5{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         color: var(--ghost-white);
     }
     p, a, *::placeholder{
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         color: var(--ghost-white);
     }
     .container{
